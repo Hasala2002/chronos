@@ -291,5 +291,4 @@ const format = (options) => {
   console.log(chronos.trim());
 };
 
-format("hh:mm:ss:cc,-dddf-Mmm,-yyyy");
 module.exports.format = format;

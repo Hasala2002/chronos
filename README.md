@@ -9,7 +9,7 @@ npm i @hasala2002/chronos --save
 Then...
 
 ```
-import {chronos} from '@hasala2002/chronos';
+const chronos = require('@hasala2002/chronos');
 
 chronos.format('ddd-Mmm-yyy')
 ```
