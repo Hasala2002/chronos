@@ -4,12 +4,12 @@ Chronos is a light weight time and date string manipulation function.
 
 # Installation
 ```
-npm i chronos --save
+npm i @hasala2002/chronos --save
 ```
 Then...
 
 ```
-import {chronos} from 'chronos';
+import {chronos} from '@hasala2002/chronos';
 
 chronos.format('ddd-Mmm-yyy')
 ```

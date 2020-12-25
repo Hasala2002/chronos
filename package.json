@@ -1,5 +1,5 @@
 {
-  "name": "chronos",
+  "name": "@hasala2002/chronos",
   "version": "1.0.0",
   "description": "Chronos is a light weight time and date string manipulation function.",
   "main": "chronos.js",
@@ -11,5 +11,16 @@
     "url": "git+https://github.com/Hasala2002/chronos.git"
   },
   "author": "Hasala Heiyanthduwa",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [
+    "date",
+    "time",
+    "parse",
+    "date format",
+    "time format"
+  ],
+  "bugs": {
+    "url": "https://github.com/Hasala2002/chronos/issues"
+  },
+  "homepage": "https://github.com/Hasala2002/chronos#readme"
 }
