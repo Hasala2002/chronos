@@ -11,7 +11,9 @@ Then...
 ```
 const chronos = require('@hasala2002/chronos');
 
-chronos.format('ddd-Mmm-yyy')
+let date = chronos.format('ddd-Mmm-yyy')
+
+console.log(date)
 ```
 
 # Date String Format

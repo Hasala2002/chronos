@@ -1,40 +1,8 @@
-const monthsLong = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-const monthsShort = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-const weekDaysLong = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
+const presets = require('./config')
+
+const monthsLong = ["January","February","March","April","May","June","July","August","September","October","November","December",];
+const monthsShort = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",];
+const weekDaysLong = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday",];
 const weekDaysShort = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 function TConv24(time24) {
@@ -288,7 +256,14 @@ const format = (options) => {
       default:
     }
   });
-  console.log(chronos.trim());
+  return chronos.trim()
 };
 
+const preset = (presetvalue) =>{
+  return format(presets[presetvalue])
+}
+
+console.log(preset('tPrimary'))
+
 module.exports.format = format;
+module.exports.preset = preset;
