@@ -57,12 +57,12 @@ chronos.format('ddd-Www,-Mmm-yyyy');
 
 **Examples**
 ```
-chronos('hh:mm:ss');              //16:50:32
-chronos('hh:mm:ss:CC');           //4:50:32 AM
-chronos('hh:mm:ss:cc');           //4:50:32 am
-chronos('hh:mm');                 //16:50:32
-chronos('hh:mm:CC');              //4:50 AM
-chronos('hh:mm:cc,');             //4:50 am,
+chronos.format('hh:mm:ss');              //16:50:32
+chronos.format('hh:mm:ss:CC');           //4:50:32 AM
+chronos.format('hh:mm:ss:cc');           //4:50:32 am
+chronos.format('hh:mm');                 //16:50:32
+chronos.format('hh:mm:CC');              //4:50 AM
+chronos.format('hh:mm:cc,');             //4:50 am,
 ```
 
 # Presets
