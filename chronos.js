@@ -32,9 +32,9 @@ function tConv24(time24) {
   return ts;
 }
 
-const format = (options) => {
+const format = (options,cdate) => {
   let formatData = options.split("-");
-  var date = new Date();
+  if(cdate===undefined){var date = new Date()}else{var date = new Date(cdate)}
   let chronos = "";
   formatData.forEach((section) => {
     if (section.includes(":")) {
@@ -175,7 +175,7 @@ const format = (options) => {
           suff = "st";
         } else if (date.getDate() % 10 == 2) {
           suff = "nd";
-        } else if (date.getDate() % 10 == 3) {
+        } else if ((date.getDate() % 10 == 3) && (date.getDate()!==13)) {
           suff = "rd";
         } else {
           suff = "th";
@@ -188,7 +188,7 @@ const format = (options) => {
           sufff = "st";
         } else if (date.getDate() % 10 == 2) {
           sufff = "nd";
-        } else if (date.getDate() % 10 == 3) {
+        } else if ((date.getDate() % 10 == 3) && (date.getDate()!==13)) {
           sufff = "rd";
         } else {
           sufff = "th";
@@ -257,13 +257,11 @@ const format = (options) => {
     }
   });
   return chronos.trim()
-};
-
-const preset = (presetvalue) =>{
-  return format(presets[presetvalue])
 }
 
-console.log(preset('tPrimary'))
+const preset = (presetvalue,cdate) =>{
+  return format(presets[presetvalue],cdate)
+}
 
 module.exports.format = format;
 module.exports.preset = preset;

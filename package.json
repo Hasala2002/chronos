@@ -1,6 +1,6 @@
 {
   "name": "@hasala2002/chronos",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Chronos is a light weight time and date string manipulation function.",
   "main": "chronos.js",
   "scripts": {

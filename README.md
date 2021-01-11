@@ -40,7 +40,7 @@ console.log(date)
 
 **Example**
 ```
-chronos('ddd-Www,-Mmm-yyyy');
+chronos.format('ddd-Www,-Mmm-yyyy');
 //13th Thursday,  June 2002
 ```
 
@@ -65,5 +65,15 @@ chronos('hh:mm:CC');              //4:50 AM
 chronos('hh:mm:cc,');             //4:50 am,
 ```
 
+# Presets
+| Preset  | Format | 
+| ------------ | ------------ |
+| ***dPrimary*** | 13th of June 2020, Wednesday |
+| ***dSecondary*** | 13th, June 2020 |
+| ***tPrimary*** | 4.32 pm |
+| ***tSecondary*** | 4.32.59 pm |
+
+
+
 # Upcoming updates
-* preset values
+* time functions and calculation
